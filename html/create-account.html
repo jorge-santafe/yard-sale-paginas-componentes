@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Yard sale</title>
+  </head>
+  <body>
+    <header></header>
+      <div class="login-container">
+        <div class="login-info">
+            <h1 class="login-title">My account</h1>
+        </div>
+        <form class="form" action="">
+            <label for="name">
+                <span class="form-title">Name</span>
+                <input class="form-input" type="text" name="name" id="name" placeholder="Camila Yokoo" required>
+            </label>
+            <label for="email">
+                <span class="form-title">Email</span>
+                <input class="form-input" type="email" name="email" id="email" placeholder="camilayokoo@gmail.com" required>
+            </label>
+            <label for="password">
+                <span class="form-title">Password</span>
+                <input class="form-input" type="password" name="password" id="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+            </label>
+            <input class="button is-primary form-button" type="submit" value="Create">
+        </form>
+   </div>
+   <style>
+        .login-container{
+            display: grid;
+            place-content: center;
+            grid-template-columns: minmax(300px,340px);
+            grid-template-rows: auto 1fr;
+            block-size: 100vh;
+            position: relative;
+            margin-inline: 1rem;
+        }
+        .login-info{
+            margin-block-start: 1.5rem;
+            margin-block-end: 2.625rem;
+        }
+        .login-title{
+            margin-block-start: 0;
+            margin-block-end: 0.5rem;
+            font: var(--lgBold);
+            color: var(--black);
+        }
+        .form-button{
+            position: absolute;
+            bottom: 1.5rem;
+            inline-size: 100%;
+            max-inline-size: 340px;
+            margin-block-start: 0.6875rem;
+        }
+        @media (min-width:688px) {
+            .form-button{
+                position: relative;
+                bottom: auto;
+            }
+            .login-container{
+                grid-template-rows: auto;
+            }
+        }
+   </style>
+  </body>
+</html>
