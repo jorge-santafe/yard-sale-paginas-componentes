@@ -1,5 +1,6 @@
 @import './buttons.css';
 @import './icons.css';
+@import './link.css';
 @import './form.css';
 :root {
     --veryLightPink: #C7C7C7;
