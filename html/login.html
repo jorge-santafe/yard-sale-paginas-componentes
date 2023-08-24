@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Yard sale</title>
+  </head>
+  <body>
+   <div class="login-container">
+        <div class="login-logo-container">
+            <img src="../img/logo-yard-sale.svg" alt="logo-yard-sale" title="Logo logo-yard-sale">
+        </div>
+        <form class="form" action="">
+            <label for="email">
+                <span class="form-title">Email address</span>
+                <input class="form-input" type="email" name="email" id="email" placeholder="camilayokoo@gmail.com" required>
+            </label>
+            <label for="confirm-password">
+                <span class="form-title">Re-enter password</span>
+                <input class="form-input" type="password" name="confirm-password" id="confirm-password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+            </label>
+            <input class="button is-primary form-button" type="submit" value="Confirm">
+        </form>
+        <div class="login-options">
+            <a href="#" class="link is-primary login-password-recovery">Forgot my password</a>
+            <a href="#" class="button is-secondary login-sign-up">Sign up</a>
+        </div>
+   </div>
+   <style>
+        .login-container{
+            display: grid;
+            place-content: center;
+            grid-template-columns: minmax(300px,340px);
+            grid-template-rows: 1fr max-content 1fr;
+            block-size: 100vh;
+            position: relative;
+            margin-inline: 1rem;
+        }
+        .login-logo-container{
+            text-align: center;
+            margin-block-end: 3rem;
+            display: grid;
+            align-items: end;
+            justify-content: center;
+        }
+        .login-logo-container img{
+            vertical-align: middle;
+        }
+        .login-info{
+            margin-block-end: 2.625rem;
+        }
+        .login-title{
+            text-align: center;
+            margin-block-start: 0;
+            margin-block-end: 0.5rem;
+            font: var(--lgBold);
+            color: var(--black);
+        }
+        .login-description{
+            font:var( --lgRegular);
+            color: var(--gray);
+            text-align: justify;
+            margin: 0;
+        }
+        .form-button{
+            margin-block-start: 1.125rem;
+        }
+        .login-options{
+            margin-block-start: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 3.75rem;
+            justify-content: space-between;
+            padding-block-end: 1.5rem;
+        }
+        @media (min-width:768px) {
+            .login-logo-container img{
+                display:none;
+            }
+            .login-options{
+                justify-content: flex-start;
+            }
+        }
+   </style>
+  </body>
+</html>
