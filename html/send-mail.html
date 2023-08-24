@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Yard sale</title>
+  </head>
+  <body>
+   <div class="login-container">
+        <div class="login-logo-container">
+            <img src="../img/logo-yard-sale.svg" alt="logo-yard-sale" title="Logo logo-yard-sale">
+        </div>
+        <div class="login-info">
+            <h1 class="login-title">Email has been sent!</h1>
+            <p class="login-description">Please check your inbox for instructions on how to reset the password </p>
+        </div>
+        <div class="login-send-mail-container">
+            <img src="../img/mail.png" alt="imagen de correo enviado" title="correo enviado">
+        </div>
+        <a href="#" class="button is-primary">Login</a>
+        <p class="login-resend-mail">
+            Didn’t receive the email?
+            <a href="#" class="link is-primary">Back to log in</a>
+        </p>
+   </div>
+   <style>
+        .login-container{
+            display: grid;
+            place-content: center;
+            grid-template-columns: minmax(300px,340px);
+            block-size: 100vh;
+            margin-inline: 1rem;
+        }
+        .login-logo-container{
+            text-align: center;
+            margin-block-end: 4.625rem;
+        }
+        .login-logo-container img{
+            vertical-align: middle;
+        }
+        .login-info{
+            margin-block-end: 2.625rem;
+        }
+        .login-title{
+            text-align: center;
+            margin-block-start: 0;
+            margin-block-end: 0.5rem;
+            font: var(--lgBold);
+            color: var(--black);
+        }
+        .login-description{
+            font:var( --lgRegular);
+            color: var(--gray);
+            text-align: justify;
+            margin: 0;
+        }
+        .login-send-mail-container{
+            text-align: center;
+            margin-block-end: 2.25rem;
+        }
+        .login-resend-mail{
+            margin-block-start: 2.125rem;
+            font: var(--smMedium);
+            text-align: center;
+            color: var(--gray);
+        }
+        .login-container .link{
+            font: var(--mdMedium);
+            margin-block-start: 1.5rem;
+        }
+        @media (min-width:768px) {
+            .login-logo-container{
+                display:none;
+            }
+        }
+   </style>
+  </body>
+</html>
