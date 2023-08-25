@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Yard sale</title>
+  </head>
+  <body>
+    <div class="desktop-menu">
+        <ul class="menu-container">
+            <li>
+                <a class="link order-title" href="">My orders</a>
+            </li>
+            <li>
+                <a class="link order-title" href="">My account</a>
+            </li>
+            <li>
+                <a class="link is-primary" href="">Sign Out</a>
+            </li>
+        </ul>
+    </div>
+    <style>
+        
+        .desktop-menu{
+            inline-size: 153px;
+            padding: 1.125rem;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: var(--white);
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12)
+        }
+        .menu-container{
+            list-style: none;
+            padding: 0;
+            text-align: end;
+            display: flex;
+            flex-direction: column;
+            gap: 1.875rem;
+            margin: 0;
+        }
+        .menu-container .link{
+            font: var(--mdBold);
+        }
+        .order-title{
+            color: var(--black);
+        }
+        
+        .menu-container li:last-child{
+            border-block-start: 2px solid var(--gray10);
+            padding-block-start: 20px;
+            
+        }
+    </style>
+  </body>
+</html>
