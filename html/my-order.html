@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Yard sale</title>
+</head>
+<body>
+    <div class="my-order">
+        <h2 class="my-order-title">My order</h2>
+        <div class="my-order-container">
+            <div class="my-order-content">
+                <p class="my-order-info">
+                    <span class="order-date">25.08.2023</span>
+                    <span class="cant-order"> 6 articles</span>
+                </p>
+                <p class="order-price">$560.00</p>
+            </div>
+        </div>
+        <div class="shopping-carts">
+            <figure class="product-image">
+                <img src="../img/round-shelf.png" alt="round-shelf">
+            </figure>
+            <p class="product-title">Round Shelf</p>
+            <p class="product-price">$120,00</p>
+        </div>
+        <div class="shopping-carts">
+            <figure class="product-image">
+                <img src="../img/round-shelf.png" alt="round-shelf">
+            </figure>
+            <p class="product-title">Round Shelf</p>
+            <p class="product-price">$120,00</p>
+        </div>
+        <div class="shopping-carts">
+            <figure class="product-image">
+                <img src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="round-shelf">
+            </figure>
+            <p class="product-title">Round Shelf</p>
+            <p class="product-price">$120,00</p>
+        </div>
+        <div class="shopping-carts">
+            <figure class="product-image">
+                <img src="../img/round-shelf.png" alt="round-shelf">
+            </figure>
+            <p class="product-title">Round Shelf</p>
+            <p class="product-price">$120,00</p>
+        </div>
+    </div>
+</body>
+<style>
+    .my-order{
+        block-size: 100vh;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: minmax(16.25rem, 25.3125rem);
+        place-content: center;
+        margin-inline:1rem ;
+    }
+    .my-order-title{
+        margin-block: 0 1.5rem;
+        font: var(--lgBold);
+        color: var(--black);
+    }
+    .my-order-container{
+        background: var(--textInputField);
+        border-radius: 0.625rem;
+        padding: 1rem 1.125rem;
+    }
+    .my-order-content{
+        display: flex;
+        gap: 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .my-order-info>span{
+        display: block;
+       
+    }
+    .my-order-info .order-date{
+        font: var(--mdBold);
+        color: var(--black);
+        margin-block-end: 0.375rem;
+    }
+    .my-order-info .cant-order{
+        font: var(--smRegular);
+        color: var(--gray);
+    }
+    .order-price{
+        font: var(--lgBold);
+        font-family: Roboto;
+    }
+    .my-order-info,.order-price{
+        margin: 0;
+    }
+    .shopping-carts{
+        display: grid;
+        align-items: center;
+        gap: 1rem;
+        grid-template-columns: auto 1fr min-content;
+    }
+    .product-image{
+        inline-size: 4.75rem;
+        block-size: 4.75rem;
+        border-radius: 1.25rem;
+        overflow: hidden;
+        margin: 0;
+    }
+    .product-image img{
+        inline-size: inherit;
+        block-size: inherit;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+    .product-title{
+        font: var(--smRegular);
+        color: var(--gray);
+    }
+    .product-price{
+        font: var(--mdBold);
+        font-family: Roboto;
+        color: var(--black);
+    }
+    @media (max-width:768px){
+        .my-order-title{
+            display: none;
+        }
+    }
+</style>
+</html>
