@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Yard Sale</title>
+</head>
+<body>
+    
+    <div class="product-details">
+        <div class="product-image">
+            <img src="../img/2x-fridge.png" alt="frigde" title="fridge">
+        </div>
+        <div class="product-info">
+            <p class="product-price">$120,00</p>
+            <p class="product-title">Retro refrigerator</p>
+            <p class="product-description">With its functional and practical interior, this refrigerator also fulfills a decorative function, adding personality and a retro-vintage aesthetic to your kitchen or workplace.</p>
+        </div>
+        <button class=" product-button-add button is-primary">
+             <i class="icon shopping-cart"></i>
+             Add to cart
+        </button>
+    </div>
+    <style>
+        .product-details{
+            display: grid;
+            max-inline-size: 24rem;
+            grid-template-rows:384px 1fr  auto;
+            block-size: 100vh;
+            background-color: var(--white);
+            margin: auto;
+        }
+        .product-image{
+            inline-size: 100%;
+            block-size: 24rem;
+            overflow: hidden;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+        .product-image img{
+            inline-size: inherit;
+            block-size: inherit;
+            vertical-align: middle;
+            object-fit: cover;
+        }
+        .product-info{
+            margin-block-start: 1.5rem;
+            margin-inline: 1rem;
+        }
+        .product-price{
+            margin: 0;
+            font: var(--lgBold);
+            font-family: roboto;
+            color: var(--dark);
+        }
+        .product-title{
+            margin: 0;
+            font: var(--lgRegular);
+            color: var(--gray);
+        }
+        .product-description{
+            text-align: justify;
+            color: var(--gray);
+            margin-block-end:2.4375rem ;
+        }
+        .product-button-add{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-block:0.5625rem ;
+            margin-block-end: 1.5rem;
+            margin-inline: 1rem;
+        }
+        @media (min-width:640px) {
+            .product-details{
+                position: absolute;
+                right: 0;
+                z-index: 2;
+                inline-size: 24rem;
+                box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.119789);
+            }
+        }
+    </style>
+</body>
+</html>
