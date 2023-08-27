@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Yard Sale</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <button class="button is-compact navbar-button-menu">
+        <i class="icon menu"></i>
+      </button>
+      <div class="navbar-left">
+        <figure class="navbar-logo">
+          <img
+            src="../img/logo-yard-sale.svg"
+            alt="Logo yard sale"
+            title="logo Yard Sale"
+          />
+        </figure>
+        <ul class="navbar-menu">
+          <li><a class="link is-primary" href="">All</a></li>
+          <li><a class="link" href="">Clothes</a></li>
+          <li><a class="link" href="">Electronics</a></li>
+          <li><a class="link">Furniture</a></li>
+          <li><a class="link" href="">Toys</a></li>
+          <li><a class="link" href="">Others</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <a href="" class="sign-user link is-primary">Sign in</a>
+        <button class="button is-compact">
+          <i class="icon shopping-cart-notification"></i>
+        </button>
+      </div>
+    </nav>
+  </body>
+  <style>
+    .navbar {
+      display: flex;
+      padding-inline: 3.25rem;
+      justify-content: space-between;
+      align-items: center;
+      block-size: 3.375rem;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
+    }
+    .navbar-button-menu{
+        display: none;
+    }
+    .navbar-logo {
+      margin: 0;
+      inline-size: 9rem;
+      block-size: 1.875rem;
+    }
+    .navbar-logo img {
+      inline-size: inherit;
+      block-size: inherit;
+      vertical-align: middle;
+    }
+    .navbar-left {
+      display: flex;
+      flex: 1;
+      gap: 3.25rem;
+      align-items: center;
+    }
+    .navbar-menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1.25rem;
+    }
+    .navbar-menu .link {
+      font: var(--mdMedium);
+      color: var(--veryLightPink);
+      padding-block: 0.375rem;
+      padding-inline: 0.875rem;
+      border-radius: 0.625rem;
+    }
+    .navbar-menu .link.is-primary {
+      color: var(--hospitalGreen);
+      outline: 1px solid var(--hospitalGreen);
+    }
+    .navbar-right {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .navbar-right .sign-user {
+        font: var(--mdMedium);
+    }
+    .navbar-right button i{
+           background-size:1.875rem;            
+    }
+    @media(max-width:980px){
+        .navbar{
+            padding-inline: 1rem;
+        }
+        .navbar-button-menu{
+            display: block;
+        }
+        .navbar-logo{
+            margin:auto;
+        }
+        .navbar-menu{
+            display: none;
+        }
+        .navbar-right .sign-user {
+        display: none;
+        }
+    }
+  </style>
+</html>
